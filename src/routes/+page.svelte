@@ -1,5 +1,5 @@
-<main class="max-w-3xl flex text-center m-auto h-60">
-	<div class="self-end m-auto">
+<main class="flex text-center h-60 w-screen">
+	<div class="m-auto">
 		Homepage of Noran Raskin.<br />
 		Currently under construction.
 		<!-- Hello, and welcome to my personal website! My name is Noran, and I am a student and software

@@ -5,7 +5,7 @@
 
 <main class="bg-white dark:bg-zinc-800 dark:text-white min-h-screen flex flex-col">
 	<Header />
-	<div class="px-8">
+	<div>
 		<slot />
 	</div>
 	<Footer />
