@@ -1,9 +1,9 @@
 <script lang="ts">
 	import Instagram from '$lib/svg/socials/instagram.svelte';
 	import Youtube from '$lib/svg/socials/youtube.svelte';
-	import Twitter from '$lib/svg/socials/twitter.svelte';
 	import Github from '$lib/svg/socials/github.svelte';
 	import Linkedin from '$lib/svg/socials/linkedin.svelte';
+	import Stackoverflow from '$lib/svg/socials/stackoverflow.svelte';
 	var currentYear = new Date().getFullYear();
 </script>
 
@@ -30,6 +30,15 @@
 			</a>
 			<a
 				class="p-1"
+				href="https://stackoverflow.com/users/14108006"
+				target="_blank"
+				rel="noreferrer"
+				title="Upvote my answers on stackoverflow"
+			>
+				<Stackoverflow />
+			</a>
+			<a
+				class="p-1"
 				href="https://www.youtube.com/@noranraskin"
 				target="_blank"
 				rel="noreferrer"
@@ -46,15 +55,6 @@
 			>
 				<Instagram />
 			</a>
-			<!-- <a
-				class="p-1"
-				href="https://twitter.com/noranraskin"
-				target="_blank"
-				rel="noreferrer"
-				title="Say Hi on Twitter"
-			>
-				<Twitter />
-			</a> -->
 		</div>
 		<div class="text-sm p-1">
 			Icons by <a href="https://iconoir.com/">Iconoir</a>.

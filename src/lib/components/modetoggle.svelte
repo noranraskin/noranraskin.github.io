@@ -41,7 +41,7 @@
 		</button>
 	</div>
 	{#if showMenu}
-		<ul class="flex flex-col p-3 bg-white dark:bg-zinc-800 rounded-lg">
+		<ul class="flex flex-col p-3 bg-white dark:bg-zinc-800 border rounded-lg">
 			<li class="flex">
 				<button
 					class="flex flex-row p-0.5"
