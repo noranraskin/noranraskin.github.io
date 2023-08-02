@@ -10,7 +10,7 @@
 		<ul class="flex flex-col">
 			{#each data.posts as post}
 				<li class="flex py-4">
-					<div class="rounded-xl p-4 w-full hover:bg-slate-100">
+					<div class="rounded-xl p-4 w-full hover:bg-slate-100 dark:hover:bg-zinc-700">
 						<Postpreview {post} />
 					</div>
 				</li>
