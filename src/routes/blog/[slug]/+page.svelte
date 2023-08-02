@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import type { BlogPost } from '$lib/types.js';
+	import Post from '$lib/components/post.svelte';
 
 	export let data;
 	let currentPost;
@@ -13,7 +14,6 @@
 
 <main class="max-w-xl m-auto">
 	{#if currentPost}
-		<h2 class="font-bold text-3xl">{currentPost.title}</h2>
-		<svelte:component this={currentPost.default} />
+		<Post post={currentPost} />
 	{/if}
 </main>

@@ -1,10 +1,10 @@
-export type Categories = 'embedded' | 'web' | 'filesystem' | 'macos'
+export type CategoriesType = 'embedded' | 'web' | 'filesystem' | 'macos'
 
-export interface BlogPost {
+export interface BlogPostTyped {
     title: string;
     slug: string;
     date: Date;
-    categories: Categories[];
+    categories: CategoriesType[];
     published: boolean;
     default: ConstructorOfATypedSvelteComponent;
 }

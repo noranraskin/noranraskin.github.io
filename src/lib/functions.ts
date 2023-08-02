@@ -1,11 +1,11 @@
-import type { BlogPost } from '$lib/types';
+import type { BlogPostTyped } from '$lib/types';
 
 export function getPosts() {
-    let posts: BlogPost[] = [];
+    let posts: BlogPostTyped[] = [];
 
     const paths = import.meta.glob('/src/routes/blog/[slug]/*.svelte', {eager : true});
     for (const path in paths) {
-        const file = paths[path] as BlogPost;
+        const file = paths[path] as BlogPostTyped;
         if (file && typeof file === 'object' && 'published' in file) {
             posts.push(file);
         }

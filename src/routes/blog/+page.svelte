@@ -1,4 +1,6 @@
 <script>
+	import Postpreview from '$lib/components/postpreview.svelte';
+
 	export let data;
 </script>
 
@@ -9,22 +11,7 @@
 			{#each data.posts as post}
 				<li class="flex py-4">
 					<div class="rounded-xl p-4 w-full hover:bg-slate-100">
-						<a href="blog/{post.slug}">
-							<p class="text-sm text-gray-600">{post.date.toLocaleDateString()}</p>
-							<h2 class="font-bold text-xl py-2">{post.title}</h2>
-							<div class="max-h-36 overflow-hidden">
-								<svelte:component this={post.default} />
-							</div>
-							<div class="py-2 flex flex-row">
-								{#each post.categories as category}
-									<span class="text-xs p-2 bg-slate-200 rounded-xl mr-3 flex">{category}</span>
-								{/each}
-								<div class="flex grow" />
-								<p class="flex self-center text-sm text-gray-600 hover:text-inherit">
-									read more...
-								</p>
-							</div>
-						</a>
+						<Postpreview {post} />
 					</div>
 				</li>
 			{/each}
