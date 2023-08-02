@@ -7,7 +7,7 @@
 	var currentYear = new Date().getFullYear();
 </script>
 
-<footer class="flex grow flex-col justify-end p-4">
+<footer class="flex grow flex-col justify-end p-4 select-none">
 	<div class="flex flex-col items-center justify-content">
 		<div class="flex">
 			<a
@@ -46,7 +46,7 @@
 			>
 				<Instagram />
 			</a>
-			<a
+			<!-- <a
 				class="p-1"
 				href="https://twitter.com/noranraskin"
 				target="_blank"
@@ -54,12 +54,12 @@
 				title="Say Hi on Twitter"
 			>
 				<Twitter />
-			</a>
+			</a> -->
 		</div>
-		<div>
+		<div class="text-sm p-1">
 			Icons by <a href="https://iconoir.com/">Iconoir</a>.
 		</div>
-		<div>
+		<div class="text-sm p-1">
 			© {currentYear} Noran Raskin. All rights reserved.
 		</div>
 	</div>
